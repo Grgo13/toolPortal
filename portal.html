@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tools Portal | マイWebツール集</title>
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col items-center justify-center p-4 selection:bg-zinc-800 selection:text-zinc-100">
+
+  <main class="w-full max-w-4xl space-y-8 py-8">
+    
+    <!-- タイトルエリア -->
+    <header class="text-center space-y-2">
+      <h1 class="text-3xl font-bold tracking-tight text-zinc-100">Web Tools Dashboard</h1>
+      <p class="text-xs text-zinc-400">ブラウザ上で完結する自作便利ツールポータル</p>
+    </header>
+
+    <!-- 3行 × 3列 のグリッドレイアウト -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+      <!-- 1. 動画圧縮ツール (今回作成) -->
+      <a 
+        href="https://grgo13.github.io/video-compressor/video-compressor.html" 
+        class="group bg-zinc-900 border border-zinc-800 hover:border-zinc-500 rounded-2xl p-5 shadow-lg transition-all hover:-translate-y-1 flex flex-col justify-between space-y-4"
+      >
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-200 group-hover:bg-zinc-100 group-hover:text-zinc-900 transition-colors">
+            <!-- 動画アイコン -->
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h2 class="text-sm font-semibold text-zinc-100 group-hover:text-white">動画圧縮ツール</h2>
+          <p class="text-xs text-zinc-400 leading-relaxed">FFmpeg.wasmを活用し、サーバー送信なしでブラウザ内で安全に動画を軽量化。</p>
+        </div>
+        <div class="text-[10px] font-mono text-zinc-500 flex items-center space-x-1">
+          <span>開く</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <!-- 2. 写真コラージュツール (以前作成) -->
+      <a 
+        href="https://sns-video-collage-app.vercel.app" 
+        class="group bg-zinc-900 border border-zinc-800 hover:border-zinc-500 rounded-2xl p-5 shadow-lg transition-all hover:-translate-y-1 flex flex-col justify-between space-y-4"
+      >
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-200 group-hover:bg-zinc-100 group-hover:text-zinc-900 transition-colors">
+            <!-- 画像アイコン -->
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h2 class="text-sm font-semibold text-zinc-100 group-hover:text-white">写真コラージュ</h2>
+          <p class="text-xs text-zinc-400 leading-relaxed">複数の画像をレイアウト配置し、簡単に1枚の写真コラージュを生成。</p>
+        </div>
+        <div class="text-[10px] font-mono text-zinc-500 flex items-center space-x-1">
+          <span>開く</span>
+          <span>→</span>
+        </div>
+      </a>
+        href="https://grgo13.github.io/flipbook-generator/flipbook-generator.html"
+      <!-- 3. 未実装枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">パラパラ漫画風GIF作成</h2>
+          <p class="text-xs text-zinc-600">動画からコマ抜きしてGIFファイルとして出力します</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+        href="https://grgo13.github.io/bonfire/bonfire-bgm.html"
+      <!-- 4. 枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">New Tool</h2>
+          <p class="text-xs text-zinc-600">次回作成ツール用に予約されています。</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+      <!-- 5. 枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">New Tool</h2>
+          <p class="text-xs text-zinc-600">次回作成ツール用に予約されています。</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+      <!-- 6. 枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">New Tool</h2>
+          <p class="text-xs text-zinc-600">次回作成ツール用に予約されています。</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+      <!-- 7. 枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">New Tool</h2>
+          <p class="text-xs text-zinc-600">次回作成ツール用に予約されています。</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+      <!-- 8. 枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">New Tool</h2>
+          <p class="text-xs text-zinc-600">次回作成ツール用に予約されています。</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+      <!-- 9. 枠（準備中） -->
+      <div class="bg-zinc-950/50 border border-dashed border-dashed border-zinc-800/80 rounded-2xl p-5 flex flex-col justify-between space-y-4 opacity-60">
+        <div class="space-y-2">
+          <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+          <h2 class="text-sm font-medium text-zinc-500">New Tool</h2>
+          <p class="text-xs text-zinc-600">次回作成ツール用に予約されています。</p>
+        </div>
+        <span class="text-[10px] font-mono text-zinc-700">準備中</span>
+      </div>
+
+    </section>
+
+    <!-- フッター -->
+    <footer class="text-center text-[11px] text-zinc-600 border-t border-zinc-900 pt-6">
+      © My Personal Web Tools Hub
+    </footer>
+
+  </main>
+
+</body>
+</html>
